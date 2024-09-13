@@ -1,0 +1,19 @@
+# --------------------------------------------------
+# seleksi2
+#
+# Contoh penggunaan && untuk melakukan seleksi
+#    berdasarkan dua nilai matapelajaran
+# --------------------------------------------------
+
+echo -n "Nilai Matematika: "
+read matematika
+
+echo -n "Nilai Bahasa Inggris: "
+read inggris
+
+if [[ $matematika -gt 80 ]]  && [[ $inggris -gt 80 ]]
+then
+  echo "Anda diterima"
+else
+  echo "Maaf, Anda belum mendapat kesempatan"
+fi

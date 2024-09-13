@@ -1,0 +1,16 @@
+#!/bin/bash
+
+# ---------------------------------------------- 
+# tesuntil
+#
+# Contoh penggunaan until untuk membaca
+#    data bilangan dari keyboard
+# ----------------------------------------------
+
+bil=xxx
+
+until echo $bil | grep -v "[^0-9]" > /dev/null
+do
+  echo "Masukkan sebuah bilangan bulat positif"
+  read bil
+done

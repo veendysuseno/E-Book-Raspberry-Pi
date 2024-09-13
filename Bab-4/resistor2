@@ -1,0 +1,20 @@
+#!/bin/bash
+
+# ---------------------------------------------- 
+# resistor2
+#
+# Contoh penggunaan if-elif
+# ----------------------------------------------
+
+echo -n "Berapa hambatan resitor? "
+read hambatan
+
+if [ $hambatan -lt 220 ]
+then
+  echo "Hambatan terlalu kecil. Gunakan paling tidak 220 ohm"
+elif [ $hambatan -gt 1000 ]
+then
+  echo "LED mungkin tak menyala. Gunakan paling besar 1K" 
+else
+  echo "OK, boleh digunakan. LED pasti menyala"
+fi

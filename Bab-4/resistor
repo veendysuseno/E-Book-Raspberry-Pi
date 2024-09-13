@@ -1,0 +1,17 @@
+#!/bin/bash
+
+# ---------------------------------------------- 
+# resistor
+#
+# Contoh penggunaan if-else
+# ----------------------------------------------
+
+echo -n "Berapa hambatan resitor? "
+read hambatan
+
+if [ $hambatan -lt 220 ]
+then
+  echo "Hambatan terlalu kecil. Gunakan paling tidak 220 ohm"
+else
+  echo "Aman digunakan, tapi LED mungkin tak menyala"
+fi

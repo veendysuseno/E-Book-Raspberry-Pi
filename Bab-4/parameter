@@ -1,0 +1,12 @@
+# --------------------------------------- 
+# parameter
+#
+# Contoh pemrosesan parameter
+# ---------------------------------------
+
+echo "Jumlah parameter = $#"
+echo "Semua parameter  = $*"
+
+echo 'Isi $0' $0
+echo 'Isi $1' $1
+echo 'Isi $2' $2

@@ -1,0 +1,16 @@
+# ----------------------------------------------------
+# lokal
+#
+# Contoh variabel lokal
+# ----------------------------------------------------
+
+function proses() {
+   local resistor=10K 
+   echo "Di fungsi proses(): resistor = $resistor"
+}
+
+resistor=220
+echo "di skrip: resistor = $resistor"
+
+proses # Panggil fungsi=
+echo "di skrip: resistor = $resistor"

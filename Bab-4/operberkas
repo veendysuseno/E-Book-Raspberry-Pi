@@ -1,0 +1,33 @@
+# ----------------------------------------------------
+# operberkas
+#
+# Contoh penggunaan operator yang terkait dengan file
+# ----------------------------------------------------
+
+echo "Masukkan nama file:"
+read berkas
+
+if [ -e $berkas ]; then
+  echo "File ini tersedia"
+else
+  echo "File ini tidak ada"
+  exit
+fi
+
+if [ -r $berkas ]; then
+  echo "File ini dapat dibaca"
+else
+  echo "File ini tidak dapat dibaca"
+fi
+
+if [ -w $berkas ]; then
+  echo "File ini dapat ditulisi"
+else
+  echo "File ini tidak dapat ditulisi"
+fi
+
+if [ -x $berkas ]; then
+  echo "File ini dapat dieksekusi"
+else
+  echo "File ini tidak dapat dieksekusi"
+fi

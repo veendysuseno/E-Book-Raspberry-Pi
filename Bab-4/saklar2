@@ -1,0 +1,22 @@
+# --------------------------------------------------
+# saklar2
+#
+# Contoh penggunaan || untuk melakukan operasi atau
+# --------------------------------------------------
+
+echo -n "Masukkan angka 1 untuk "
+echo "menyatakan keadaan saklar ON"
+echo "atau 0 untuk menyatakan OFF"
+
+echo -n "Saklar pertama (0/1): "
+read saklar_satu
+
+echo -n "Saklar kedua (0/1): "
+read saklar_kedua
+
+if [[ $saklar_satu -eq 1 ]] || [[ $saklar_kedua -eq 1 ]]
+then
+  echo "Lampu ON"
+else
+  echo "Lampu OFF"
+fi

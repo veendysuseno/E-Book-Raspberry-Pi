@@ -1,0 +1,5 @@
+resitor:1K:10
+resistor:2,2K:4
+resistor:470:4
+motor dc:5V:2
+potensiometer:5K:1

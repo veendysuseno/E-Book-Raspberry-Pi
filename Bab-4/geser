@@ -1,0 +1,13 @@
+# --------------------------------------- 
+# geser
+#
+# Contoh pemrosesan parameter
+# ---------------------------------------
+
+echo "Keadaan awal parameter = $*"
+
+shift
+echo "Parameter sekarang = $*"
+
+shift
+echo "Parameter sekarang = $*"

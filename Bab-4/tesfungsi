@@ -1,0 +1,14 @@
+# ----------------------------------------------------
+# tesfungsi
+#
+# Contoh pembuatan dan penggunaan fungsi
+# ----------------------------------------------------
+
+function tampilkan() {
+  echo "Selamat mencoba fungsi" 
+}
+
+# Pemanggilan fungsi
+
+tampilkan
+tampilkan

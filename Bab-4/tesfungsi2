@@ -1,0 +1,15 @@
+# ----------------------------------------------------
+# tesfungsi2
+#
+# Contoh pembuatan dan penggunaan fungsi
+#   dengan melibatkan argumen
+# ----------------------------------------------------
+
+function tampilkan() {
+  echo $1 
+}
+
+# Pemanggilan fungsi
+
+tampilkan transitor
+tampilkan resistor

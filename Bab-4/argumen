@@ -1,0 +1,15 @@
+# -----------------------------
+# argumen
+#
+# Contoh penggunaan $# dan $*
+# -----------------------------
+
+function tes_argumen() {
+   echo "Semua argumen: " $*
+   echo "Jumlah argumen = " $#
+}
+
+# Pemanggilan fungsi
+tes_argumen resistor diode
+echo ""
+tes_argumen LDR LED "Motor DC" transistor

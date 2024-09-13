@@ -1,0 +1,16 @@
+# --------------------------------------------------
+# cekstring2
+#
+# Contoh penggunaan ! pada pemeriksaan string
+#    dalam keadaan kosong atau tidak
+# --------------------------------------------------
+
+echo "Masukkan suatu string (boleh berupa string kosong):"
+read str
+
+if [[ ! -z $str ]]
+then
+  echo "String tidak kosong"
+else
+  echo "String kosong"
+fi

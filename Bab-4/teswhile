@@ -1,0 +1,13 @@
+# ---------------------------------------
+# teswhile
+#
+# Contoh penggunaan while untuk
+#    menampilkan angka 0 hingga 10
+# ---------------------------------------
+
+(( bil = 0 ))
+while [[ $bil -le 10 ]]
+do
+   echo $bil
+   (( bil++ ))
+done

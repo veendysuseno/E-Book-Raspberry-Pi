@@ -1,0 +1,14 @@
+# -------------------------------------
+# naikturun
+#
+# Contoh penggunaan ++ dan --
+# -------------------------------------
+
+(( bil = 5 ))
+echo "Isi bil = $bil"
+
+(( bil++ ))
+echo "Isi bil = $bil"
+
+(( bil-- ))
+echo "Isi bil = $bil"

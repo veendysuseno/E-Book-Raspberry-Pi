@@ -1,0 +1,27 @@
+# ---------------------------
+# bacadata
+#
+# Contoh pembaharuan data
+#    di label secara periodis 
+# ---------------------------
+
+import Tkinter
+import time
+
+def perbaharuiInfo():
+    labelInfo.config(text = str(time.time()))
+    aplikasi.after(500, perbaharuiInfo)
+   
+aplikasi = Tkinter.Tk()
+aplikasi.title('Tes GUI')
+aplikasi.geometry('250x100')
+
+# Definisi Label
+labelInfo = Tkinter.Label(aplikasi, 
+                text = 'Selamat Mencoba!',
+                font = ('Helvetica', 18))
+labelInfo.pack(pady = 20)
+
+aplikasi.after(500, perbaharuiInfo)
+
+aplikasi.mainloop()

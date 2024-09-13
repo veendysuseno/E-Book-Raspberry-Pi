@@ -1,0 +1,25 @@
+
+# -------------------------------------------
+# bandingstr
+#
+# Contoh berbagai pembandingan string
+# -------------------------------------------
+
+(( a = "Yogyakarta" ))
+(( b = "YOGYAKARTA" ))
+
+if [[ $a < $b ]]
+then
+  echo "Yes"
+else
+  echo "No"
+fi
+
+
+if (( $a == $b ))
+then
+  echo "Yes"
+else
+  echo "No"
+fi
+

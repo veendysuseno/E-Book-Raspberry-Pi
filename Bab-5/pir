@@ -1,0 +1,25 @@
+#!/bin/bash
+
+# ----------------------------------------------
+# pir
+#
+# Contoh untuk mengontrol LED
+#   dengan sensor PIR
+# ----------------------------------------------
+
+gpio -g mode 17 out
+gpio -g mode 4 in
+
+while true
+do
+  nilai_pir=`gpio -g read 4`
+  if [[ $nilai_pir -eq 1 ]]
+  then
+    #-------- Hidupkan LED
+    gpio -g write 17 1
+    sleep 2
+  else
+    #-------- Matikan LED
+    gpio -g write 17 0
+  fi
+done

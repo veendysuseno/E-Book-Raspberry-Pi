@@ -1,0 +1,11 @@
+# -------------------------------------
+# komentar
+#
+# Contoh skrip yang dilengkapi komentar
+# -------------------------------------
+
+pwd
+cd /
+pwd
+cd ~
+pwd

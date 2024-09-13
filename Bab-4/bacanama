@@ -1,0 +1,9 @@
+# ---------------------------------------
+# bacanama
+#
+# Contoh untuk membaca data dari keyboard
+# ---------------------------------------
+
+echo -n "Siapa nama Anda: "
+read nama
+echo "Hai, $nama. Selamat belajar skrip!"

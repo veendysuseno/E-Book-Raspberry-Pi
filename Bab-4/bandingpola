@@ -1,0 +1,16 @@
+# -----------------------------------------------
+# bandingpola
+#
+# Contoh berbagai pembandingan string dengan pola
+# -----------------------------------------------
+
+echo "Masukkan sebuah nama kota:"
+read kota
+
+if [[ $kota =~ ^[A-Fa-f].* ]]
+then
+  echo "Anda memasukkan kota dengan nama awalan"
+  echo "A hingga F"
+else
+  echo "Kota yang berawalan G hingga Z"
+fi

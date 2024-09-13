@@ -1,0 +1,32 @@
+#!/bin/bash
+
+# -------------------------------------------
+# tombol
+#
+# Contoh untuk menghidupkan dan mematikan LED
+#   melalui tombol menggunakan gpio
+#
+#   LED dihubungkan di GPIO17
+#   Tombol dihubungkan ke GPIO4 
+# -------------------------------------------
+
+gpio -g mode 17 out
+gpio -g mode 4 in
+
+# Pastikan LED mati
+gpio -g write 17 0
+
+while true
+do
+  nilai_tombol=`gpio -g read 4`;
+  if [[ $nilai_tombol -eq 1 ]]
+  then  
+    #-------- Hidupkan LED
+    gpio -g write 17 1
+  else
+    #-------- Matikan LED
+    gpio -g write 17 0
+  fi
+
+  sleep 0.1  
+done

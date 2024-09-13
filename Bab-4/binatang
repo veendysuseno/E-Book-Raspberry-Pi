@@ -1,0 +1,23 @@
+#!/bin/bash
+
+# ---------------------------------------------- 
+# binatang
+#
+# Contoh penggunaan case dan simbol |
+# ----------------------------------------------
+
+echo "Ketik binatang dengan satu kata"
+echo "Semua harap diketik dengan huruf kecil ya..." 
+
+echo -e -n "\nNama binatang: "
+read binatang
+
+case $binatang in
+  kuda | sapi | kancil | jerapah | anjing | kambing)
+     echo "Hmm, saya tahu. Ia berkaki empat"
+     ;;
+  ayam | bebek | angsa | burung) 
+     echo "Yup! Itu mah binatang berkaki dua"
+     ;;
+  *) echo "Maaf, ya. Saya nggak kenal $binatang";
+esac

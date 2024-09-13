@@ -1,0 +1,21 @@
+# ----------------------------------------------
+# led2
+#
+# Contoh untuk menghidupkan dan mematikan LED
+#   secara bergantian menggunakan utilitas gpio
+#
+#   LED dihubungkan di GPIO17
+# ----------------------------------------------
+
+gpio -g mode 17 out
+
+while true
+do
+  #-------- Hidupkan LED
+  gpio -g write 17 1
+  sleep 1
+
+  #-------- Matikan LED
+  gpio -g write 17 0
+  sleep 1  
+done

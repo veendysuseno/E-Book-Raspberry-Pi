@@ -1,0 +1,16 @@
+# -------------------------------------
+# aritmetika
+#
+# Contoh operasi aritmetika
+# -------------------------------------
+
+bil=25
+
+(( hasil = bil + 1 ))
+echo "Isi hasil = $hasil"
+
+(( hasil = bil ** 2 ))
+echo "$bil kuadrat = $hasil"
+
+(( hasil = $bil % 3 ))
+echo "Sisa pembagian = $hasil"

@@ -1,0 +1,23 @@
+# --------------------------------------------------
+# cekstring
+#
+# Contoh penggunaan -z dan -n untuk memeriksa string
+#    dalam keadaan kosong atau tidak
+# --------------------------------------------------
+
+echo "Masukkan suatu string (boleh berupa string kosong):"
+read str
+
+if [[ -z $str ]]
+then
+  echo "Melalui -z: String kosong"
+else
+  echo "Melalui -z: String tidak kosong"
+fi
+
+if [[ -n $str ]]
+then
+  echo "Melalui -n: String tidak kosong"
+else
+  echo "Melalui -n: String kosong"
+fi

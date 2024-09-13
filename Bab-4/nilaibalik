@@ -1,0 +1,28 @@
+# ----------------------------------------------------
+# nilaibalik
+#
+# Contoh fungsi dengan nilai balik
+# ----------------------------------------------------
+
+function file_ada() {
+  if [ -e $1 ]; then
+    return 0
+  else
+    return 1
+  fi
+}
+
+# Penggunaan fungsi
+file_ada /etc/passwd
+if [[ $? -eq 0 ]]; then
+  echo "File /etc/passwd ada"
+else
+  echo "File /etc/passwd tidak ada"
+fi
+
+file_ada /etc/password
+if [[ $? -eq 0 ]]; then
+  echo "File /etc/password ada"
+else
+  echo "File /etc/password tidak ada"
+fi

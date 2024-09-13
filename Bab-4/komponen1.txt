@@ -1,0 +1,14 @@
+Resistor:2K:19
+resistor:220:30
+resistor:1M:4
+resistor:10K:4
+resistor:270:2
+resistor:640:5
+transistor:BC548:4
+LED:5mm merah:12
+LED:5mm hijau:6
+LED:5mm kuning:3
+diode:1N4001:2
+diode:1N4002:2
+kapasitor:100mF:4
+kapasitor:1mF:2

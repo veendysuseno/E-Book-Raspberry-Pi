@@ -1,0 +1,14 @@
+#!/bin/bash
+
+# ---------------------------------------------- 
+# fora
+#
+# Contoh penggunaan for untuk memproses
+#    setiap nilai yang terdapat dalam daftar
+#    sesudah kata in
+# ----------------------------------------------
+
+for komponen in Transistor Resistor "Motor DC"
+do
+  echo $komponen
+done

@@ -1,0 +1,28 @@
+#!/bin/bash
+
+# -------------------------------------------
+# led
+#
+# Contoh untuk menghidupkan dan mematikan LED
+#   secara bergantian
+#
+#   LED dihubungkan di GPIO17
+# -------------------------------------------
+
+if [ ! -e /sys/class/gpio/gpio17 ] 
+then
+  echo 17 > /sys/class/gpio/export
+fi
+
+echo out > /sys/class/gpio/gpio17/direction
+
+while true
+do
+  #-------- Hidupkan LED
+  echo 1 > /sys/class/gpio/gpio17/value
+  sleep 1
+
+  #-------- Matikan LED
+  echo 0 > /sys/class/gpio/gpio17/value
+  sleep 1  
+done

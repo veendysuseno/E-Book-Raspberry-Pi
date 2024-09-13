@@ -1,0 +1,19 @@
+#!/bin/bash
+
+# ---------------------------------------------- 
+# cekpar
+#
+# Contoh penggunaan if
+#    untuk memeriksa jumlah parameter posisi.
+#    Kalau parameter posisi tidak sama dengan 2
+#    akan muncul pesan kesalahan
+# ----------------------------------------------
+
+if [ $# != 2 ]
+then
+  echo "Penggunaan: cekpar parameter1 parameter2"
+  exit
+fi
+
+echo "Parameter pertama: $1"
+echo "Parameter kedua  : $2"

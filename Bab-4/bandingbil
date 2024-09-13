@@ -1,0 +1,15 @@
+# -------------------------------------------
+# bandingbil
+#
+# Contoh berbagai pembandingan bilangan bulat
+# -------------------------------------------
+
+(( a = 2 ))
+(( b = 2 ))
+
+if [[ $a -le $b ]]
+then
+  echo "Yes"
+else
+  echo "No"
+fi

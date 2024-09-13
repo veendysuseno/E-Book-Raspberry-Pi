@@ -1,0 +1,39 @@
+#!/bin/bash
+
+# -------------------------------------------
+# onoff
+#
+# Contoh untuk menghidupkan dan mematikan LED
+#   melalui tombol menggunakan gpio
+#
+#   LED dihubungkan di GPIO17
+#   Tombol dihubungkan ke GPIO4 
+# -------------------------------------------
+
+gpio -g mode 17 out
+gpio -g mode 4 in
+
+# Pastikan LED mati
+gpio -g write 17 0
+
+# Variabel pengingat
+keadaanSebelum=0
+ledMenyala=0
+
+while true
+do
+  keadaanSekarang=`gpio -g read 4`
+  
+  if [[ $keadaaanSekarang -ne $keadaanSebelum ]] &&
+     [[ $keadaanSekarang -eq 1 ]]
+  then
+    (( ledMenyala = 1 - $ledMenyala )) 
+
+    gpio -g write 17 $ledMenyala
+    
+    sleep .3
+  fi
+
+  (( keadaanSebelum = $keadaanSekarang ))  
+
+done

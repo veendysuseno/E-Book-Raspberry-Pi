@@ -1,0 +1,30 @@
+#!/bin/bash
+
+# ---------------------------------------------- 
+# menu
+#
+# Contoh penggunaan case
+#    untuk menangani sejumlah pilihan
+# ----------------------------------------------
+
+echo "Pilihlah warna yang paling Anda sukai"
+
+echo "1. Biru"
+echo "2. Putih"
+echo "3. Hitam"
+echo "4. Merah muda"
+
+echo -e -n "\nPilihan Anda (1..4): "
+read pilihan
+
+case $pilihan in
+  1) echo "Biru, ya? Warna yang indah!"
+     ;;
+  2) echo "Putih seperti warna kapas"
+     ;;
+  3) echo "Hitam pilihan Anda"
+     ;;
+  4) echo "Wao! Merah muda!"
+     ;;
+  *) echo "Kelihatannya Anda menyukai warna lain";
+esac

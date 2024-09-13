@@ -1,0 +1,16 @@
+# -----------------------------------------------
+# cekjpg
+#
+# Contoh pembandingan string = pola
+#    untuk memeriksa ekstensi .jpg
+# -----------------------------------------------
+
+echo "Masukkan sebuah nama file dengan ekstensinya:"
+read nama_file
+
+if [[ $nama_file == *.jpg ]]
+then
+  echo "Ya, Anda memasukkan file .jpg"
+else
+  echo "Bukan file .jpg"
+fi

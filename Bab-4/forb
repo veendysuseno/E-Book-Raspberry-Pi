@@ -1,0 +1,17 @@
+#!/bin/bash
+
+# ---------------------------------------------- 
+# forb
+#
+# Contoh penggunaan for untuk memperoleh
+#    semua file /bin yang berawalan b     
+#    dan namanya hanya meengandung maksimal
+#    lima huruf
+# ----------------------------------------------
+
+for berkas in /bin/b????
+do
+  echo "Nama lengkap $berkas"
+  echo "Nama berkas `basename $berkas`"
+  echo ""
+done 
